@@ -1,4 +1,4 @@
-import modellayer.Book;
+import modellayer.*;
 import viewlayer.BookStoreMenu;
 
 import java.util.ArrayList;
@@ -8,9 +8,7 @@ public class BookStoreDriver {
     public static void main(String[] args) {
 
         BookStoreApp bookstoreApp = new BookStoreApp();
-        List<Book> inventory = new ArrayList<>();
-        BookStoreMenu menu = new BookStoreMenu();
-        bookstoreApp.runMenu(menu);
-        menu.displayMenu();
+        bookstoreApp.testDB(new DB());
+        bookstoreApp.runMenu(new BookStoreMenu());
     }
 }

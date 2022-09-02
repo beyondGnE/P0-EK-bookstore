@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8d9a60-f23f-45ac-bb7a-fdc0f0ce6f5f" name="Changes" comment="First commit; created initial skeleton structure">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BookStoreApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/BookStoreDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllerlayer/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modellayer/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modellayer/BookStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modellayer/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/viewlayer/BookStoreMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/viewlayer/IMenu.java" afterDir="false" />
+    <list default="true" id="8e8d9a60-f23f-45ac-bb7a-fdc0f0ce6f5f" name="Changes" comment="Further developed menus and db layer">
+      <change afterPath="$PROJECT_DIR$/src/main/java/modellayer/DB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/modellayer/IConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookStoreApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookStoreApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BookStoreDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookStoreDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/modellayer/BookStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modellayer/BookStore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/viewlayer/BookStoreMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewlayer/BookStoreMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/viewlayer/IMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewlayer/IMenu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +34,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -56,15 +50,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/eugen/SQL-challenges",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eugen/SQL-challenges&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
+  <component name="RunManager">
+    <configuration name="BookStoreDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BookStoreDriver" />
+      <module name="BookStore.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BookStoreDriver" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,6 +82,14 @@
       <option name="presentableId" value="Default" />
       <updated>1661653145912</updated>
     </task>
+    <task id="LOCAL-00001" summary="First commit; created initial skeleton structure">
+      <created>1661960817476</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1661960817476</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit; created initial skeleton structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit; created initial skeleton structure" />
+    <MESSAGE value="Further developed menus and db layer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Further developed menus and db layer" />
   </component>
 </project>
