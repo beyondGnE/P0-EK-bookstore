@@ -1,19 +1,19 @@
-import viewlayer.IMenu;
-import modellayer.*;
+import controllerlayer.BookService;
+import controllerlayer.BookStoreController;
+import modellayer.Book;
+import viewlayer.*;
+import modellayer.BookStore;
+
+import java.util.List;
 
 public class BookStoreApp {
-    private String userInput;
 
-    public void runMenu(IMenu menu) {
-        while (true) {
-            menu.displayMenu();
-            menu.acceptInput();
-            menu.evaluateResponse();
-        }
+    private BookStoreController controller;
+
+    public BookStoreApp() {
+        controller = new BookStoreController();
+        controller.displayMainView();
     }
 
-    public void testDB(IConnection test) {
-        test.connectToDB();
-    }
 
 }

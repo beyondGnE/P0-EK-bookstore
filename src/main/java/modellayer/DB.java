@@ -1,12 +1,12 @@
 package modellayer;
 
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 // Represents the DB
-public class DB implements IConnection {
+public class DB {
     private Connection db;
 
     public Connection getDb() {
@@ -28,10 +28,30 @@ public class DB implements IConnection {
                     "user=sa;password=P@SSWORD123;";
             try {
                 db = DriverManager.getConnection(URL);
+//                System.out.println("The connection was successful");
             } catch (SQLException e) {
                 e.printStackTrace();
             }
         }
 
     }
+
+    // The method for getting all of a data.
+//    public ResultSet getAllOp(String query) {
+//        List<Item> allItems = new ArrayList<>();
+//        try {
+//            PreparedStatement sqlStatement = this.getDb().prepareStatement();
+//            ResultSet result = sqlStatement.executeQuery(query);
+//            while (result.next()) {
+//                allItems.add(new Book(
+//                        result.getString("title"),
+//                        result.getString()
+//                ))
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return result;
+//    }
+
 }
