@@ -14,6 +14,7 @@ public class BookStoreMenu extends Menu {
     @Override
     public void displayMenu() {
         System.out.println("Please select a choice: ");
+        System.out.println("[V]iew Booklist");
         System.out.println("[S]earch for books");
         System.out.println("[A]dd book");
         System.out.println("[U]pdate book");
@@ -25,6 +26,11 @@ public class BookStoreMenu extends Menu {
     @Override
     public void evaluateResponse(BookStoreController c) {
         switch(this.getUserInput()) {
+            case "v": case "V": case "view": case "VIEW": case "View":
+            case "view booklist": case "VIEW BOOKLIST": case "booklist":
+            case "BOOKLIST":
+                c.displayMainView();
+                break;
             case "s": case "S": case "search": case "Search": case "SEARCH":
             case "search books": case "SEARCH BOOKS": case "search for books":
             case "SEARCH FOR BOOKS":
@@ -39,12 +45,12 @@ public class BookStoreMenu extends Menu {
             case "U": case "u": case "update book": case "UPDATE BOOK": case "update":
             case "UPDATE":
                 System.out.println("A method here will handle updating book");
-//                c.displayUpdateBookView();
+                c.displayUpdateBookView();
                 break;
             case "d": case "D": case "delete book": case "DELETE BOOK": case "delete":
             case "DELETE":
                 System.out.println("A method here will handle deleting book");
-//                c.displayDeleteBookView();
+                c.displayDeleteBookView();
                 break;
             case "Exit": case "EXIT": case "exit": case "e": case "x": case "b": case "B": case "back": case "BACK":
                 System.exit(0);

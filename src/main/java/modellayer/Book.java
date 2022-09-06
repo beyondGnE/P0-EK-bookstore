@@ -5,7 +5,7 @@ import java.util.Date;
 
 public class Book extends Item {
     public Book(String title, Author author,
-                double price, Date publishDate, String isbn) {
+                double price, String publishDate, String isbn) {
         super(title, price);
         this.setAuthor(author);
         this.setIsbn(isbn);
@@ -32,15 +32,15 @@ public class Book extends Item {
         this.isbn = isbn;
     }
 
-    public Date getPublishDate() {
+    public String getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(Date publishDate) {
+    public void setPublishDate(String publishDate) {
         this.publishDate = publishDate;
     }
     private Author author;
-    private Date publishDate;
+    private String publishDate;
 
     private String isbn;
 
@@ -60,8 +60,8 @@ public class Book extends Item {
     public String toString() {
         StringBuilder builder = new StringBuilder();
         builder.append(this.getTitle() + "\t");
-        builder.append(this.getPrice() + "\n");
-        builder.append("\t"+this.getAuthor() + "\t");
+        builder.append(this.getAuthor() + "\t");
+        builder.append(this.getPrice() + "\t");
         builder.append(this.getIsbn());
 //        builder.append("Published Date: " + this.getPublishDate() + "\n");
 

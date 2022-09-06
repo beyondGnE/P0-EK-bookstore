@@ -54,4 +54,6 @@ public abstract class Menu {
         System.out.println(this.getUserInput());
         this.setIsGood(false); // Switch it back off.
     }
+
+//    public abstract void runMenu(BookStoreController c);
 }

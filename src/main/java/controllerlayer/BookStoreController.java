@@ -2,10 +2,7 @@ package controllerlayer;
 
 import modellayer.Book;
 import modellayer.BookStore;
-import viewlayer.AddBookMenu;
-import viewlayer.BookStoreMenu;
-import viewlayer.Menu;
-import viewlayer.SearchMenu;
+import viewlayer.*;
 
 import java.util.List;
 
@@ -18,10 +15,12 @@ public class BookStoreController {
     public BookStoreController() {
         service = new BookService();
         bookstore = new BookStore();
-        menus = new Menu[4];
+        menus = new Menu[5];
         menus[0] = new BookStoreMenu();
         menus[1] = new SearchMenu();
         menus[2] = new AddBookMenu();
+        menus[3] = new DeleteBookMenu();
+        menus[4] = new UpdateBookMenu();
     }
 
     public void displayMainView() {
@@ -52,8 +51,16 @@ public class BookStoreController {
     }
 
     public void displayDeleteBookView() {
-
+        menus[3].runMenu(this);
+        service.deleteRecord(bookstore, menus[3].getUserInput());
     }
+
+    public void displayUpdateBookView() {
+        menus[4].runMenu(this);
+        service.updateRecord(bookstore, menus[4].getUserInput());
+    }
+
+
 
     // Opens book search menu
     public void searchBooks() {

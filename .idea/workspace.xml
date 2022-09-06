@@ -4,21 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e8d9a60-f23f-45ac-bb7a-fdc0f0ce6f5f" name="Changes" comment="Further developed menus and db layer">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controllerlayer/BookStoreController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/modellayer/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/viewlayer/AddBookMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/viewlayer/SearchMenu.java" afterDir="false" />
+    <list default="true" id="8e8d9a60-f23f-45ac-bb7a-fdc0f0ce6f5f" name="Changes" comment="Massively updated the controller layer and inserting CRUD methods.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/viewlayer/DeleteBookMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/viewlayer/UpdateBookMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookStoreApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookStoreApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BookStoreDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BookStoreDriver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controllerlayer/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllerlayer/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controllerlayer/BookStoreController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllerlayer/BookStoreController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modellayer/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modellayer/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/modellayer/BookStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modellayer/BookStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modellayer/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modellayer/DB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/modellayer/IConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/modellayer/IConnection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/viewlayer/BookStoreMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewlayer/BookStoreMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/viewlayer/IMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewlayer/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/viewlayer/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/viewlayer/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662149011625</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Massively updated the controller layer and inserting CRUD methods.">
+      <created>1662415317300</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662415317300</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,6 +125,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit; created initial skeleton structure" />
     <MESSAGE value="Further developed menus and db layer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Further developed menus and db layer" />
+    <MESSAGE value="Massively updated the controller layer and inserting CRUD methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Massively updated the controller layer and inserting CRUD methods." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="com.microsoft.sqlserver.jdbc.SQLServerException" package="com.microsoft.sqlserver.jdbc" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

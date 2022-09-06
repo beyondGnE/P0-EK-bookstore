@@ -15,7 +15,7 @@ public class BookService {
     // Create
     public void createRecord(BookStore b, String input) {
         b.addBookByIsbn(input);
-        System.out.println("The book was added successfully");
+//        System.out.println("The book was added successfully");
     }
 
     // Read
@@ -29,12 +29,12 @@ public class BookService {
     }
 
     // Update
-    public void updateRecord() {
-
+    public void updateRecord(BookStore b, String isbn) {
+        b.updateBookByIsbn(isbn);
     }
 
     // Delete
-    public void deleteRecord() {
-
+    public void deleteRecord(BookStore b, String isbn) {
+        b.deleteBookByIsbn(isbn);
     }
 }
