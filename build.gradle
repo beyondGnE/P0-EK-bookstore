@@ -1,5 +1,10 @@
 plugins {
     id 'java'
+    id("com.github.johnrengelman.shadow") version "6.0.0"
+}
+// Shadow task depends on Jar task, so these configs are reflected for Shadow as well
+tasks.jar {
+    manifest.attributes["Main-Class"] = "Main"
 }
 
 group 'org.example'
@@ -14,6 +19,12 @@ dependencies {
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     // https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc
     implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '11.2.0.jre8'
+    // https://mvnrepository.com/artifact/io.javalin/javalin
+    implementation group: 'io.javalin', name: 'javalin', version: '4.6.4'
+    implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.31'
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.4'
+
 }
 
 test {
